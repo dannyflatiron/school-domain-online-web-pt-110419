@@ -9,7 +9,7 @@ class School
 
   def add_student(name, grade)
     @roster[grade] ||= []
-    @roster[grade]<< name
+    @roster[grade] << name
     # binding.pry
   end
 
@@ -19,10 +19,10 @@ class School
   end
 
   def sort
-    # @roster.sort.to_h
+    # binding.pry
+    # @roster.sort
     @roster.each do |key, value|
       @roster[key]=value.sort
     end
-    # binding.pry
   end
 end
